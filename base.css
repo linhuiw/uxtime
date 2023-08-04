@@ -1,0 +1,388 @@
+/* alice.base 样式模块 */
+
+@charset "utf-8";
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color:#000;background:#fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    margin:0;padding:0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea {
+    font:12px/1.5 tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+}
+input,select,textarea {
+    font-size:100%;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+    border-collapse:collapse;border-spacing:0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+    text-align:inherit;
+}
+
+/* 去除默认边框 */
+fieldset,img {
+    border:0;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+    display:block;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym {
+    border:0;font-variant:normal;
+}
+
+/* 一致的 del 样式 */
+del {
+    text-decoration:line-through;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+    font-style:normal;
+    font-weight:500;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+    list-style:none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {
+    text-align:left;
+}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:500;
+}
+
+q:before,q:after {
+    content:'';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* 正常链接 未访问 */
+a:link {
+    color: #08c;
+}
+
+/* 鼠标悬停 */
+a:hover {
+    color: #08c;
+    text-decoration: underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+    text-decoration:none;
+}
+
+/* 清理浮动 */
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-clear {
+    zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+    display:none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,.fn-right {
+    display:inline;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 简单的渐变 */
+.fn-linear {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+    background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background: linear-gradient(top, #fcfcfc, #f1f1f1);
+}
+
+/* 浅色的渐变 */
+.fn-linear-light {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background:-o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: linear-gradient(top, #fcfcfc, #f9f9f9);
+}
+
+/* 人民币符号 */
+.fn-rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+
+
+/* chrome 下字体过小的问题 */
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+	width: 882px;
+	margin: auto auto;
+}
+.clearfix { zoom: 1; }
+#pngfix{
+      background:url(./images/logo_01.png) no-repeat 0 0;
+      filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/logo_01.png', sizingMethod='scale');
+    width:99px;height:41px;padding:0px;margin: 0px;}
+    }
+		#menu{
+			float:right;
+			height:15px;
+			font-size:12px;}
+		#menu ul{
+			list-style:none;
+			display:inline;
+			width:53px;
+		}
+			#menu li{
+				list-style:none;
+				width:53px;
+				display:block;
+				float:left;
+			}
+				#menu li a{
+					color:#fff;
+					background:url(images/01.gif) repeat-x;
+					height:15px;
+				}
+			#menu li a:hover{
+			color:#fff;
+			background:url(images/02.png);
+			line-height:18px;
+			font-size: 12px;
+					}
+		#menu li a.current{	color:#fff;
+					background:url(images/01.gif) repeat-x;
+					height:15px;}
+.word1{
+	display:inline;
+	margin:2px;}
+
+.STYLE1 {
+	font-size: 12px;
+	font-family: "宋体";
+	font-style: normal;
+	line-height: 18px;
+	/*color: #4c4c4c;*/
+	/*filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;*/
+}
+.STYLE5 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	font-family: "宋体";
+	filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+.STYLE6 {font-size: 12px; font-weight: bold; color: #333333; font-family: Arial, Helvetica, sans-serif; 	filter:alpha(opacity=80); -moz-opacity:0.8;-khtml-opacity: 0.8;opacity: 0.8;}
+.STYLE10 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-style: normal; line-height: 18px; color: #9b9b9b; word-spacing: 0em; }
+.STYLE11 {font-family: "宋体"}
+.STYLE12 {font-family: Arial, Helvetica, sans-serif}
+.STYLE16 {	font-family: "宋体";
+	font-style: normal;
+	line-height: 18px;
+	word-spacing: 0em;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.STYLE17 {font-family: Arial, Helvetica, sans-serif; color: #CCCCCC; }
+.STYLE14 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-style: normal; line-height: 18px; color: #666666; word-spacing: 0em; }
+
+.index-info{
+	float: left;
+	margin-left: 2px;
+	width: 292px;
+}
+.index-info-title{
+	display: block;
+	margin-bottom: 4px;
+}
+.info-text{
+	margin-left: 31px;
+	margin-top: 8px;
+}
+.info-text li{
+	font-size: 12px;
+	font-family: "宋体";
+	font-style: normal;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: middle;
+	/*color: #4c4c4c;*/
+	filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    margin-bottom: 2px;
+    margin-left: -20px;
+    list-style-image:url('img/li-count.png');
+}
+.info-text a {
+	color: #666666;
+}
+.header-nav {
+	position: relative;
+	margin: 0 auto;
+	width: 882px;
+}
+.header-nav #logo {
+	display: inline-block;
+	width: 98px;
+	height: 23px;
+	margin-top: 29px;
+	background: url(images/logo.png) no-repeat;
+}
+.header-nav .nav-group {
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-right: -16px;
+}
+.nav-group li {
+	display: inline-block;
+}
+.nav-group li a {
+	color: #bbb;
+	font-size: 14px;
+	float: left;
+	padding: 23px 16px 4px 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav-group li #nav-group-us{
+	/*padding-right: 0px;*/
+}
+#magic-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 6px;
+	background: #0a8926;
+}
+.sub-nav {
+	float: right;
+	margin-top: 10px;
+}
+.sub-nav i {
+	font-style: normal;
+	margin: auto 10px;
+	opacity: .3;
+}
+.sub-nav a {
+	opacity: .3;
+	color: #666666;
+}
+.sub-nav a:hover {
+	text-decoration: none;
+	color: #006600;
+}
+.sub-nav #sub-nav-current {
+	opacity: 1;
+}
+.fuwu-info{
+	float: left;
+	margin-left: 7px;
+	width: 215px;
+}
+.fuwu-info:first-child{
+	margin-left: 0px;
+}
+.fuwu-info-title{
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.fuwu-info-detail{
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+	font-family: "宋体";
+	font-style: normal;
+	line-height: 18px;
+	color: #4c4c4c;
+	filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.fuwu-info img{
+	margin-top: 10px;
+}
+#info-ly{
+	color: #0f692e;
+}
+#info-nl{
+	color: #ff7e00;
+}
+#info-lc{
+	color: #00b4ff;
+}

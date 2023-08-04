@@ -1,34 +1,385 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title></title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UXTIME DESIGN－沐川系设计</title>
+<meta name="title" content="Do one thing Do it well" />
+<meta name="keywords" content="用户体验,界面设计,UI,GUI,交互设计，工业设计" />
+<meta name="description" content="沐川系(界面设计)Studio,长三角地区专业的用户体验设计公司" />
+<style type="text/css">
+.STYLE1 {
+  font-size: 12px;
+  font-family: "宋体";
+  font-style: normal;
+  line-height: 18px;
+  color: 4c4c4c;
+  filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.STYLE2 {
+  font-size: 12px;
+  font-family: "宋体";
+  font-style: normal;
+  line-height: 18px;
+  color: #9b9b9b;
+  word-spacing: 0em;
+}
+a:link {
+  color: #666666;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: #666666;
+}
+a:hover {
+  text-decoration: none;
+  color: #006600;
+}
+a:active {
+  text-decoration: none;
+  color: #006600;
+}
+.STYLE4 {font-size: 12px; font-family: "宋体"; font-style: normal; line-height: 18px; color: #666666; }
+.STYLE6 {color: #666666; font-weight: bold; font-size: 12px; }
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 
 
-  <style id="compiled-css" type="text/css">
-    .image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-	width: 594px;
-	height: 650px;
-      background: url(//img.alicdn.com/imgextra/i1/O1CN01X7Jk3s1C32CWFlbBa_!!6000000000024-2-tps-594-650.png);
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-    }
-  </style>
+.callbacks_container {
+  position: relative;
+  float: left;
+  width: 100%;
+  /*margin-left: -1px;*/
+  }
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("banner/themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
 
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+#magic-line {
+    display: none;
+}
+</style>
+<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.0.min.js"></script>
+<script src="./js/libs/responsiveslides.min.js"></script>
+<script src="./js/jquery.color-RGBa-patch.js"></script>
+<script src="./js/magic-line.js"></script>
+<script type="text/JavaScript">
+  $(function () {
+
+    $('#nav-magline li').bind('mouseenter', function(){
+        $(this).addClass('current_page_item');
+    })
+
+    $('#nav-magline').bind('mouseenter', function(){
+        $('#magic-line').show();
+    })
+
+    $('#nav-magline').bind('mouseleave', function(){
+        $('#magic-line').hide();
+        if ( $('#nav-magline .current_page_item') ){
+            $('#nav-magline .current_page_item').removeClass('current_page_item');
+        }
+    })
+
+    $('.callbacks_container').bind("mouseleave", function() {
+        $(".prev, .next").hide();
+    });
+    $('.callbacks_container').bind("mouseenter", function() {
+        $(".prev, .next").show();
+    });
+
+    $("#slider4").responsiveSlides({
+      auto: true,
+      pager: false,
+      nav: true,
+      speed: 500,
+      namespace: "callbacks",
+      // before: function () {
+      //   $('.events').append("<li>before event fired.</li>");
+      // },
+      // after: function () {
+      //   $('.events').append("<li>after event fired.</li>");
+      // }
+    });
+
+    $(".prev, .next").hide();
+
+  });
+</script>
+<link rel="stylesheet" href="base.css" type="text/css" media="screen" />
 </head>
 
 <body>
-  <div class="image"></div>
-</body>
+<div class="header-nav">
+    <a id="logo" href="index.html"></a>
+    <ul class="nav-group" id="nav-magline">
+          <li class='current_page_item'><a href="anli-all.html">案例</a></li>
+          <li><a href="fuwu.html">服务</a></li>
+          <li><a href="xianyu.html">新闻</a></li>
+          <li><a href="we.html" id="nav-group-us">我们</a></li>
+    </ul>
+</div>
+<table width="100%" height="16" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="882" height="351" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="351">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+              <li>
+                <a href="#"><img src="banner/1.jpg" alt=""/></a>
+              </li>
+              <li>
+                <a href="fuwu-case-H5.html" target="_blank"><img src="banner/2.jpg" alt=""/></a>
+              </li>
+              <li>
+                <a href="fuwu-case-summer.html" target="_blank"><img src="banner/3.jpg" alt=""/></a>
+              </li>
+              <li>
+                <a href="fuwu-case-ixdc.html" target="_blank"><img src="banner/4.jpg" alt=""/></a>
+              </li>
+              <li>
+                <a href="fuwu-case-police.html" target="_blank"><img src="banner/5.jpg" alt=""/></a>
+              </li>
+            </ul>
+        </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" height="26" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="26"></td>
+  </tr>
+</table>
+<table width="882" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="114">
+          <a href="fuwu-case-summer.html" target="_blank"><img src="img/index/index_01.png" width="290" height="114" /></a></td>
+      </tr>
+      <tr>
+        <td height="18"></td>
+      </tr>
+      <tr>
+        <td height="14" align="left" class="STYLE5">智能家居</td>
+      </tr>
+      <tr>
+        <td height="62" align="left" valign="top" class="STYLE1">UXTIME(沐川系)携手DHouse共同打造一款全新智能家庭控制系统，开创国内智能家居系统体验新局面。</td>
+      </tr>
+    </table></td>
+    <td width="96">&nbsp;</td>
+    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="114">
+          <a href="fuwu-case-police.html" target="_blank"><img src="img/index/index_02.png" width="290" height="114" /></a></td>
+      </tr>
+      <tr>
+        <td height="18"></td>
+      </tr>
+      <tr>
+        <td height="14" align="left" class="STYLE5">全新警察设备</td>
+      </tr>
+      <tr>
+        <td height="62" align="left" valign="top" class="STYLE1">受海棠通信邀请UXTIME为某公安厅警务系统进行全新体验设计，并在警务终端设计领域获多项突破。</td>
+      </tr>
+    </table></td>
+    <td width="96">&nbsp;</td>
+    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="114">
+          <a href="fuwu-case-mango.html" target="_blank"><img src="img/index/index_03.png" width="290" height="114" /></a></td>
+        </td>
+      </tr>
+      <tr>
+        <td height="18"></td>
+      </tr>
+      <tr>
+        <td height="14" align="left" class="STYLE6">MANGO－智能电视系统</td>
+      </tr>
+      <tr>
+        <td height="62" align="left" valign="top" class="STYLE1">UXTIME一直关注智能电视的发展，与知名厂商合作并提出UI概念设计方案，获得业界关注。</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="882" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="114">
+          <a href="xianyu-003.html" target="_blank"><img src="img/index/index_04.jpg" width="290" height="114" /></a></td>
+      </tr>
+      <tr>
+        <td height="18"></td>
+      </tr>
+      <tr>
+        <td height="14" align="left" class="STYLE6">UI Award</td>
+      </tr>
+      <tr>
+        <td height="62" align="left" valign="top" class="STYLE1">UXTIME创始人Jet受邀担任CIE两岸互联网论坛嘉宾，并荣幸与腾讯一并获得UIAward金奖。</td>
+      </tr>
+    </table></td>
+    <td width="96">&nbsp;</td>
+    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="114">
+          <a href="fuwu-case-shinei.html" target="_blank"><img src="img/index/index_05.png" width="290" height="114" /></a></td>
+      </tr>
+      <tr>
+        <td height="18"></td>
+      </tr>
+      <tr>
+        <td height="14" align="left" class="STYLE5">家庭智能系统</td>
+      </tr>
+      <tr>
+        <td height="62" align="left" valign="top" class="STYLE1">我们为西谷科技设计了全新加载Android系统智能家居系统界面，在2011全国行业展获高度认可。</td>
+      </tr>
+    </table></td>
+    <td width="96">&nbsp;</td>
+    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="114">
+          <a href="fuwu-case-H5.html" target="_blank"><img src="img/H5/thumbnail-terminal-device.jpg" width="290" height="114" /></a></td>
+      </tr>
+      <tr>
+        <td height="18"></td>
+      </tr>
+      <tr>
+        <td height="14" align="left" class="STYLE6">专业手持设备</td>
+      </tr>
+      <tr>
+        <td height="62" align="left" valign="top" class="STYLE1">UXTIME（沐川系）为国内最专业警务系统设备商提供移动设备UI设计咨询服务。</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="882" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr height="200">
+    <td width="290" class="index-info">
+      <span class="index-info-title">荣誉</span>
+      <img src="images/images/Home_line1.png" width="285" height="2" />
+      <ul class="info-text">
+        <li>2013年IXDC 优秀界面设计团队</li>
+        <li>2011年UIAward 金奖</li>
+        <li>2011年作品收录《UIdesigner》</li>
+        <li>2010年ChinaUI年度十佳</li>
+        <li>2010年ChinaUI受邀专访</li>
+        <li>2010年作品收录《UIdesigner》</li>
+        <li>2009年DDF受邀专访</li>
+        <li>2009年作品收录《UIdesigner》</li>
+      </ul>
+    </td>
+    <td width="290" class="index-info">
+      <span class="index-info-title">客户</span>
+      <img src="images/images/Home_line1.png" width="285" height="2" />
+      <ul class="info-text">
+        <li>海信中国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微软中国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日立科技&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;华为技术</li>
+        <li>西谷科技&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海棠通信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;涵普科技&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国金证券</li>
+        <li>迪浩斯科技&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诗丹顿－戴&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国投资网   </li>
+        <li>新世纪认证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="we.html">成为伙伴</a></li>
+      </ul>
+    </td>
+    <td width="200" class="index-info">
+      <span class="index-info-title">联系</span>
+      <img src="images/images/Home_line1.png" width="285" height="2" />
+      <ul class="info-text">
+        <li>Q Q：1457596185</li>
+        <li>TEL：+86 13967320533</li>
+        <li>MSN：uxtime@hotmail.com</li>
+        <li>信息反馈邮箱：uxtime@gmail.com </li>
+        <li>客户服务邮箱：uxtime@hotmail.com </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<table width="883" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="672" height="25" align="left" valign="bottom" background="images/index_08.gif" class="STYLE2 STYLE10 STYLE18">CopyRight 2013-<span class="STYLE14">Uxtime Design</span>-all Rights Reserved.<span class="STYLE10">ICP</span>备08003561号</td>
+    <td width="212" align="left" valign="bottom" nowrap="nowrap" background="images/index_08.gif" class="STYLE2"><table width="210" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="right" valign="bottom" nowrap="nowrap"> <a href="index.html" class="STYLE10">Home</a><span class="STYLE10 STYLE12 STYLE16"><span class="STYLE10"><span class="STYLE10"><a href="index.html"> | </a></span></span></span><a href="anli-all.html" class="STYLE10">Portfolio</a><span class="STYLE2 STYLE10 STYLE12"><span class="STYLE10"><a href="anli-all.html"> |</a></span></span> <a href="we.html" class="STYLE17"> Contant</a></td>
+        <td width="23"><a href="feeds.xml"><img src="images/index_01.gif" alt="RSS" width="16" height="16" vspace="4" border="0" align="right" /></a></td>
+        <td width="23"><a href="http://weibo.com/muchuanxi"><img src="images/index_03.png" alt="weibo" width="16" height="16" vspace="4" border="0" align="right" /></a></td>
+      </tr>
+    </table>
 
+    </td>
+  </tr>
+</table>
+<table width="100%" height="10" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="40"></td>
+  </tr>
+</table>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19062030-8']);
+  _gaq.push(['_setDomainName', '.uxtime.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
 </html>
