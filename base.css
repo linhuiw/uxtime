@@ -329,8 +329,11 @@ body {
 	background: #0a8926;
 }
 .sub-nav {
-	float: right;
 	margin-top: 10px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 .sub-nav i {
 	font-style: normal;
