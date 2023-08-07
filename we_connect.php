@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>联系我们—沐川系(设计)</title>
+<title>锟斤拷系锟斤拷锟角★拷锟藉川系(锟斤拷锟�)</title>
 <style type="text/css">
 <!--
 body {
@@ -13,14 +13,14 @@ body {
 }
 .STYLE1 {
 	font-size: 12px;
-	font-family: "宋体";
+	font-family: "锟斤拷锟斤拷";
 	font-style: normal;
 	line-height: 18px;
 	color: 4c4c4c;
 }
 .STYLE2 {
 	font-size: 12px;
-	font-family: "宋体";
+	font-family: "锟斤拷锟斤拷";
 	font-style: normal;
 	line-height: 18px;
 	color: #9b9b9b;
@@ -42,10 +42,10 @@ a:active {
 	text-decoration: none;
 	color: #006600;
 }
-.STYLE4 {font-size: 12px; font-family: "宋体"; font-style: normal; line-height: 18px; color: #0d672d; }
+.STYLE4 {font-size: 12px; font-family: "锟斤拷锟斤拷"; font-style: normal; line-height: 18px; color: #0d672d; }
 .STYLE6 {color: #666666; font-weight: bold; font-size: 12px; }
 .STYLE7 {font-size: 12}
-.STYLE8 {font-size: 12px; font-family: "宋体"; font-style: normal; line-height: 18px; color: #666666; }
+.STYLE8 {font-size: 12px; font-family: "锟斤拷锟斤拷"; font-style: normal; line-height: 18px; color: #666666; }
 .STYLE9 {font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 14px;
@@ -81,6 +81,15 @@ function MM_swapImage() { //v3.0
 //-->
 </script>
 <link rel="stylesheet" href="base.css" type="text/css" media="screen" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KF78LMRCN6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KF78LMRCN6');
+</script>
 </head>
 
 <body onload="MM_preloadImages('images/navigation _06.gif','images/navigation _07.gif','images/navigation _08.gif','images/navigation _10.gif','images/index_01_02.gif','images/index_02_02.png','images/index_03_02.png','images/index_04_02.png','images/index_05_02.png')">
@@ -110,9 +119,9 @@ function MM_swapImage() { //v3.0
           <td width="443"><table width="435" border="0" align="center" cellspacing="0" id="nav_tab">
             <tr>
               <td width="86" align="center" class="STYLE4">&nbsp;</td>
-              <td width="86" align="center"><a href="we.html" target="_self" class="STYLE1">印象沐川系</a><a href="anli-mobile.html" target="_self" ></a></td>
-              <td width="85" align="center" class="STYLE4">联系我们</td>
-              <td width="59" align="center"><a href="we_job.html" class="STYLE1">招贤</a></td>
+              <td width="86" align="center"><a href="we.html" target="_self" class="STYLE1">印锟斤拷锟藉川系</a><a href="anli-mobile.html" target="_self" ></a></td>
+              <td width="85" align="center" class="STYLE4">锟斤拷系锟斤拷锟斤拷</td>
+              <td width="59" align="center"><a href="we_job.html" class="STYLE1">锟斤拷锟斤拷</a></td>
               <td width="109" align="center" class="STYLE1">&nbsp;</td>
             </tr>
           </table></td>
@@ -174,15 +183,15 @@ function MM_swapImage() { //v3.0
 			//init variables
 			$cf = array();
 			$sr = false;
-			
+
 			if(isset($_SESSION['cf_returndata'])){
 				$cf = $_SESSION['cf_returndata'];
 			 	$sr = true;
 			}
             ?>
       <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
-                <li id="info">您的表单填写似乎有一些问题，请核对！</li>
-                <?php 
+                <li id="info">锟斤拷锟侥憋拷锟斤拷锟斤拷写锟狡猴拷锟斤拷一些锟斤拷锟解，锟斤拷硕裕锟�</li>
+                <?php
 				if(isset($cf['errors']) && count($cf['errors']) > 0) :
 					foreach($cf['errors'] as $error) :
 				?>
@@ -192,25 +201,25 @@ function MM_swapImage() { //v3.0
 				endif;
 				?>
             </ul>
-            <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">感谢您发送的需求信息，我们会尽快与您联系。</p>
+            <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">锟斤拷谢锟斤拷锟斤拷锟酵碉拷锟斤拷锟斤拷锟斤拷息锟斤拷锟斤拷锟角会尽锟斤拷锟斤拷锟斤拷锟斤拷系锟斤拷</p>
             <form method="post" action="process.php">
               <table width="882" height="229" border="0" cellpadding="15">
               <tr>
-                    <td height="43"><input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Name/联系人" style="width:238px; "  />                      <input type="tel" id="telephone" name="telephone" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" placeholder="Telephone/电话" style="width:220px; " /></td>
+                    <td height="43"><input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Name/锟斤拷系锟斤拷" style="width:238px; "  />                      <input type="tel" id="telephone" name="telephone" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['telephone'] : '' ?>" placeholder="Telephone/锟界话" style="width:220px; " /></td>
                     <td width="361" height="400" rowspan="4" align="center" valign="bottom" background="../img/we_connect_02.gif"  > <input type="submit" value=" " id="submit-button"/></td>
                   </tr>
                   <tr>
-                    <td height="42"><input type="text" id="company" name="company" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['company'] : '' ?>" placeholder="Company/公司" /></td>
+                    <td height="42"><input type="text" id="company" name="company" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['company'] : '' ?>" placeholder="Company/锟斤拷司" /></td>
                   </tr>
                   <tr>
-                    <td height="46"><input type="text" id="website" name="website" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['website'] : '' ?>" placeholder="Website/网址" /></td>
+                    <td height="46"><input type="text" id="website" name="website" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['website'] : '' ?>" placeholder="Website/锟斤拷址" /></td>
                   </tr>
                   <tr>
-                    <td height="65" align="left" valign="top"><textarea id="sendbody" name="sendbody" placeholder="Description/需求描述：项目类别、时间安排、数量等" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['sendbody'] : '' ?></textarea></td>
+                    <td height="65" align="left" valign="top"><textarea id="sendbody" name="sendbody" placeholder="Description/锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷目锟斤拷锟绞憋拷浒诧拷拧锟斤拷锟斤拷锟斤拷锟�" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['sendbody'] : '' ?></textarea></td>
                     </tr>
                 </table>
 </form>
-           
+
         </div>
     </div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
@@ -226,8 +235,8 @@ function MM_swapImage() { //v3.0
           </tr>
           </table></td>
         </tr>
-      
-      
+
+
     </table></td>
   </tr>
 </table>
@@ -271,7 +280,7 @@ function MM_swapImage() { //v3.0
 </table>
 <table width="883" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="672" height="25" align="left" valign="bottom" background="images/index_08.gif" class="STYLE2 STYLE10 STYLE18">CopyRight 2007-<span class="STYLE14">沐川系</span>-all Rights Reserved.<span class="STYLE14">湘<span class="STYLE10">ICP</span>备</span>08003561<span class="STYLE14">号</span></td>
+    <td width="672" height="25" align="left" valign="bottom" background="images/index_08.gif" class="STYLE2 STYLE10 STYLE18">CopyRight 2007-<span class="STYLE14">锟藉川系</span>-all Rights Reserved.<span class="STYLE14">锟斤拷<span class="STYLE10">ICP</span>锟斤拷</span>08003561<span class="STYLE14">锟斤拷</span></td>
     <td width="212" align="left" valign="bottom" nowrap="nowrap" background="images/index_08.gif" class="STYLE2"><table width="210" border="0" align="right" cellpadding="0" cellspacing="0">
       <tr>
         <td align="right" valign="bottom" nowrap="nowrap"> <a href="index.html" class="STYLE10">Home</a><span class="STYLE10 STYLE12 STYLE16"><span class="STYLE10"><span class="STYLE10"><a href="index.html"> | </a></span></span></span><a href="anli-all.html" class="STYLE10">Portfolio</a><span class="STYLE2 STYLE10 STYLE12"><span class="STYLE10"><a href="anli-all.html"> |</a></span></span> <a href="we.html" class="STYLE17"> Contant</a></td>
