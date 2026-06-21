@@ -1,43 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title></title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <style id="compiled-css" type="text/css">
-    .image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-	width: 594px;
-	height: 650px;
-      background: url(//img.alicdn.com/imgextra/i1/O1CN01X7Jk3s1C32CWFlbBa_!!6000000000024-2-tps-594-650.png);
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-    }
-  </style>
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>500 服务器错误—UXTIME DESIGN</title>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="googlebot" content="noindex, nofollow" />
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/modern.css" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KF78LMRCN6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-KF78LMRCN6');
 </script>
+<style>
+  .error-page {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+    padding-block: clamp(3rem, 2rem + 4vw, 6rem);
+  }
+  .error-page .code {
+    font-family: var(--font-en);
+    font-weight: 800;
+    line-height: 1;
+    font-size: clamp(5rem, 3rem + 18vw, 12rem);
+    color: var(--brand);
+    letter-spacing: -0.03em;
+  }
+  .error-page p {
+    color: var(--ink-2);
+    font-size: var(--fs-h3);
+    margin: 0;
+  }
+</style>
 </head>
 
 <body>
-  <div class="image"></div>
+<main>
+  <div class="container container--narrow error-page">
+    <div class="code">500</div>
+    <p>服务器开小差了，请稍后再试。</p>
+    <p style="margin-top:1rem">
+      <a class="btn" href="index.html">返回首页</a>
+    </p>
+  </div>
+</main>
 </body>
-
 </html>

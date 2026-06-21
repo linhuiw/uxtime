@@ -1,375 +1,124 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>UXTIME DESIGN－沐川系设计</title>
 <meta name="title" content="Do one thing Do it well" />
 <meta name="keywords" content="用户体验,界面设计,UI,GUI,交互设计，工业设计" />
 <meta name="description" content="沐川系(界面设计)Studio,长三角地区专业的用户体验设计公司" />
-<style type="text/css">
-.STYLE1 {
-  font-size: 12px;
-  font-family: "宋体";
-  font-style: normal;
-  line-height: 18px;
-  color: 4c4c4c;
-  filter:alpha(opacity=50);
-    -moz-opacity:0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
-}
-.STYLE2 {
-  font-size: 12px;
-  font-family: "宋体";
-  font-style: normal;
-  line-height: 18px;
-  color: #9b9b9b;
-  word-spacing: 0em;
-}
-a:link {
-  color: #666666;
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-  color: #666666;
-}
-a:hover {
-  text-decoration: none;
-  color: #006600;
-}
-a:active {
-  text-decoration: none;
-  color: #006600;
-}
-.STYLE4 {font-size: 12px; font-family: "宋体"; font-style: normal; line-height: 18px; color: #666666; }
-.STYLE6 {color: #666666; font-weight: bold; font-size: 12px; }
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-
-
-.callbacks_container {
-  position: relative;
-  float: left;
-  width: 100%;
-  /*margin-left: -1px;*/
-  }
-.callbacks_nav {
-  position: absolute;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 52%;
-  left: 0;
-  opacity: 0.7;
-  z-index: 3;
-  text-indent: -9999px;
-  overflow: hidden;
-  text-decoration: none;
-  height: 61px;
-  width: 38px;
-  background: transparent url("banner/themes.gif") no-repeat left top;
-  margin-top: -45px;
-  }
-
-.callbacks_nav:active {
-  opacity: 1.0;
-  }
-.callbacks_nav.next {
-  left: auto;
-  background-position: right top;
-  right: 0;
-  }
-#magic-line {
-    display: none;
-}
-</style>
-<script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.0.min.js"></script>
-<script src="./js/libs/responsiveslides.min.js"></script>
-<script src="./js/jquery.color-RGBa-patch.js"></script>
-<script src="./js/magic-line.js"></script>
-<script type="text/JavaScript">
-  $(function () {
-
-    $('#nav-magline li').bind('mouseenter', function(){
-        $(this).addClass('current_page_item');
-    })
-
-    $('#nav-magline').bind('mouseenter', function(){
-        $('#magic-line').show();
-    })
-
-    $('#nav-magline').bind('mouseleave', function(){
-        $('#magic-line').hide();
-        if ( $('#nav-magline .current_page_item') ){
-            $('#nav-magline .current_page_item').removeClass('current_page_item');
-        }
-    })
-
-    $('.callbacks_container').bind("mouseleave", function() {
-        $(".prev, .next").hide();
-    });
-    $('.callbacks_container').bind("mouseenter", function() {
-        $(".prev, .next").show();
-    });
-
-    $("#slider4").responsiveSlides({
-      auto: true,
-      pager: false,
-      nav: true,
-      speed: 500,
-      namespace: "callbacks",
-      // before: function () {
-      //   $('.events').append("<li>before event fired.</li>");
-      // },
-      // after: function () {
-      //   $('.events').append("<li>after event fired.</li>");
-      // }
-    });
-
-    $(".prev, .next").hide();
-
-  });
-</script>
-<link rel="stylesheet" href="base.css" type="text/css" media="screen" />
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/modern.css" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KF78LMRCN6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-KF78LMRCN6');
 </script>
+<script defer src="js/components.js"></script>
+<script defer src="js/site.js"></script>
 </head>
 
-<body>
-<div class="header-nav">
-    <a id="logo" href="index.html"></a>
-    <ul class="nav-group" id="nav-magline">
-          <li class='current_page_item'><a href="anli-all.html">案例</a></li>
-          <li><a href="fuwu.html">服务</a></li>
-          <li><a href="index.html">新闻</a></li>
-          <li><a href="we.html" id="nav-group-us">我们</a></li>
-    </ul>
-</div>
-<table width="100%" height="16" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<table width="882" height="351" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="351">
-        <div class="callbacks_container">
-            <ul class="rslides" id="slider4">
-              <li>
-                <a href="index.html" target="_blank"><img src="banner/1.jpg" alt=""/></a>
-              </li>
-              <li>
-                <a href="fuwu-case-vehicle01.html" target="_blank"><img src="banner/6.jpg" alt=""/></a>
-              </li>
-              <li>
-                <a href="fuwu-case-reddot.html" target="_blank"><img src="banner/3.jpg" alt=""/></a>
-              </li>
-              <li>
-                <a href="fuwu-case-vehicle02.html" target="_blank"><img src="banner/7.jpg" alt=""/></a>
-              </li>
-              <li>
-                <a href="fuwu-case-travel01.html" target="_blank"><img src="banner/4.jpg" alt=""/></a>
-              </li>
-            </ul>
-        </div>
-    </td>
-  </tr>
-</table>
-<table width="100%" height="26" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="26"></td>
-  </tr>
-</table>
-<table width="882" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="114">
-          <a href="fuwu-case-vehicle01.html" target="_blank"><img src="img/index/index_01.jpg" width="290" height="114" /></a></td>
-      </tr>
-      <tr>
-        <td height="18"></td>
-      </tr>
-      <tr>
-        <td height="14" align="left" class="STYLE5">智能汽车</td>
-      </tr>
-      <tr>
-        <td height="62" align="left" valign="top" class="STYLE1">UXTIME从克制的角度来介入智能汽车控制方式，为国内车控体验设计提供了借鉴，并获得知名媒体报道。</td>
-      </tr>
-    </table></td>
-    <td width="96">&nbsp;</td>
-    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="114">
-          <a href="fuwu-case-travel01.html" target="_blank"><img src="img/index/index_03.jpg" width="290" height="114" /></a></td>
-      </tr>
-      <tr>
-        <td height="18"></td>
-      </tr>
-      <tr>
-        <td height="14" align="left" class="STYLE5">智慧出行</td>
-      </tr>
-      <tr>
-        <td height="62" align="left" valign="top" class="STYLE1">通过体验设计来反思出行的意义，让市民出行变得更加便捷与高效，并获得知名媒体报道。</td>
-      </tr>
-    </table></td>
-    <td width="96">&nbsp;</td>
-    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="114">
-          <a href="fuwu-case-vehicle02.html" target="_blank"><img src="img/index/index_02.jpg" width="290" height="114" /></a></td>
-        </td>
-      </tr>
-      <tr>
-        <td height="18"></td>
-      </tr>
-      <tr>
-        <td height="14" align="left" class="STYLE6">老年智能座舱</td>
-      </tr>
-      <tr>
-        <td height="62" align="left" valign="top" class="STYLE1">我们为老年人设计了全新的汽车智能座舱交互体验，并成为团队开拓国际市场的新机会。</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="882" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="114">
-          <a href="fuwu-case-summer.html" target="_blank"><img src="img/index/index_04.jpg" width="290" height="114" /></a></td>
-      </tr>
-      <tr>
-        <td height="18"></td>
-      </tr>
-      <tr>
-        <td height="14" align="left" class="STYLE6">智能家居体验</td>
-      </tr>
-      <tr>
-        <td height="62" align="left" valign="top" class="STYLE1">从家的角度深度思考智能元素介入人居环境的方式，以此来升级用户的智能操作体验。</td>
-      </tr>
-    </table></td>
-    <td width="96">&nbsp;</td>
-    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="114">
-          <a href="fuwu-case-reddot.html" target="_blank"><img src="img/index/index_05.jpg" width="290" height="114" /></a></td>
-      </tr>
-      <tr>
-        <td height="18"></td>
-      </tr>
-      <tr>
-        <td height="14" align="left" class="STYLE5">国际设计大奖</td>
-      </tr>
-      <tr>
-        <td height="62" align="left" valign="top" class="STYLE1">喜讯！我们的一款儿童出行产品设计荣获德国红点概念奖最佳设计奖（Best of the Best）。</td>
-      </tr>
-    </table></td>
-    <td width="96">&nbsp;</td>
-    <td width="230"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="114">
-          <a href="fuwu-case-zhu.html" target="_blank"><img src="img/index/index_06.jpg" width="290" height="114" /></a></td>
-      </tr>
-      <tr>
-        <td height="18"></td>
-      </tr>
-      <tr>
-        <td height="14" align="left" class="STYLE6">管理系统平台</td>
-      </tr>
-      <tr>
-        <td height="62" align="left" valign="top" class="STYLE1">为了提升了一线管理人员的操作体验，我们为三菱机电全新设计了测试管理平台，获得好评。</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="882" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr height="200">
-    <td width="290" class="index-info">
-      <span class="index-info-title">荣誉</span>
-      <img src="images/images/Home_line1.png" width="285" height="2" />
-      <ul class="info-text">
-        <li>2019年德国红点设计Best of the best</li>
-        <li>2022年德国红点设计winner</li>
-        <li>2020年韩国Kdesign设计winner</li>
-        <li>2018年设计入展世界互联网大会</li>
-        <li>2017年设计获得央视媒体介绍</li>
-        <li>2013年IXDC优秀界面设计团队</li>
-        <li>2023年嘉兴市十佳工业设计师</li>
-      </ul>
-    </td>
-    <td width="290" class="index-info">
-      <span class="index-info-title">客户</span>
-      <img src="images/images/Home_line1.png" width="285" height="2" />
-      <ul class="info-text">
-        <li>哪吒汽车&nbsp;&nbsp;&nbsp;&nbsp;金通科技&nbsp;&nbsp;&nbsp;&nbsp;日立科技&nbsp;&nbsp;&nbsp;&nbsp;华为技术</li>
-        <li>微软中国&nbsp;&nbsp;&nbsp;&nbsp;先锋科技&nbsp;&nbsp;&nbsp;&nbsp;宝骏汽车&nbsp;&nbsp;&nbsp;&nbsp;国金证券</li>
-        <li>海信科技&nbsp;&nbsp;&nbsp;&nbsp;吉利汽车&nbsp;&nbsp;&nbsp;&nbsp;中国移动&nbsp;&nbsp;&nbsp;&nbsp;西谷科技</li>
-        <li>中企管理&nbsp;&nbsp;&nbsp;&nbsp;<a href="we.html">成为伙伴</a></li>
-      </ul>
-    </td>
-    <td width="200" class="index-info">
-      <span class="index-info-title">联系</span>
-      <img src="images/images/Home_line1.png" width="285" height="2" />
-      <ul class="info-text">
-        <li>微信：414504566</li>
-        <li>联系邮箱：Jet.jiang@uxtime.com</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-<table width="883" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="672" height="25" align="left" valign="bottom" background="images/index_08.gif" class="STYLE2 STYLE10 STYLE18">CopyRight 2023-<span class="STYLE14">Uxtime Design</span>-all Rights Reserved.<span class="STYLE10">ICP</span>备08003561号</td>
-    <td width="212" align="left" valign="bottom" nowrap="nowrap" background="images/index_08.gif" class="STYLE2"><table width="210" border="0" align="right" cellpadding="0" cellspacing="0">
-      <tr>
-        <td align="right" valign="bottom" nowrap="nowrap"> <a href="index.html" class="STYLE10">Home</a><span class="STYLE10 STYLE12 STYLE16"><span class="STYLE10"><span class="STYLE10"><a href="index.html"> | </a></span></span></span><a href="anli-all.html" class="STYLE10">Portfolio</a><span class="STYLE2 STYLE10 STYLE12"><span class="STYLE10"><a href="anli-all.html"> |</a></span></span> <a href="we.html" class="STYLE17"> Contact</a></td>
-     
-      </tr>
-    </table>
+<body data-nav="home">
+<header data-site-header></header>
 
-    </td>
-  </tr>
-</table>
-<table width="100%" height="10" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="40"></td>
-  </tr>
-</table>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="slider reveal" data-interval="5000">
+        <div class="slider-track">
+          <a class="slide" href="index.html" target="_blank"><img src="banner/1.jpg" alt="UXTIME 精选" /></a>
+          <a class="slide" href="fuwu-case-vehicle01.html" target="_blank"><img src="banner/6.jpg" alt="智能汽车" /></a>
+          <a class="slide" href="fuwu-case-reddot.html" target="_blank"><img src="banner/3.jpg" alt="国际设计大奖" /></a>
+          <a class="slide" href="fuwu-case-vehicle02.html" target="_blank"><img src="banner/7.jpg" alt="老年智能座舱" /></a>
+          <a class="slide" href="fuwu-case-travel01.html" target="_blank"><img src="banner/4.jpg" alt="智慧出行" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选作品 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">News &amp; Works</span>
+        <h2>近期动态与精选作品</h2>
+      </div>
+      <div class="card-grid reveal-stagger">
+        <article class="card">
+          <a class="card-media" href="fuwu-case-vehicle01.html" target="_blank"><img src="img/index/index_01.jpg" alt="智能汽车" /></a>
+          <span class="card-tag">智能汽车</span>
+          <p>UXTIME从克制的角度来介入智能汽车控制方式，为国内车控体验设计提供了借鉴，并获得知名媒体报道。</p>
+        </article>
+        <article class="card">
+          <a class="card-media" href="fuwu-case-travel01.html" target="_blank"><img src="img/index/index_03.jpg" alt="智慧出行" /></a>
+          <span class="card-tag">智慧出行</span>
+          <p>通过体验设计来反思出行的意义，让市民出行变得更加便捷与高效，并获得知名媒体报道。</p>
+        </article>
+        <article class="card">
+          <a class="card-media" href="fuwu-case-vehicle02.html" target="_blank"><img src="img/index/index_02.jpg" alt="老年智能座舱" /></a>
+          <span class="card-tag">老年智能座舱</span>
+          <p>我们为老年人设计了全新的汽车智能座舱交互体验，并成为团队开拓国际市场的新机会。</p>
+        </article>
+        <article class="card">
+          <a class="card-media" href="fuwu-case-summer.html" target="_blank"><img src="img/index/index_04.jpg" alt="智能家居体验" /></a>
+          <span class="card-tag">智能家居体验</span>
+          <p>从家的角度深度思考智能元素介入人居环境的方式，以此来升级用户的智能操作体验。</p>
+        </article>
+        <article class="card">
+          <a class="card-media" href="fuwu-case-reddot.html" target="_blank"><img src="img/index/index_05.jpg" alt="国际设计大奖" /></a>
+          <span class="card-tag">国际设计大奖</span>
+          <p>喜讯！我们的一款儿童出行产品设计荣获德国红点概念奖最佳设计奖（Best of the Best）。</p>
+        </article>
+        <article class="card">
+          <a class="card-media" href="fuwu-case-zhu.html" target="_blank"><img src="img/index/index_06.jpg" alt="管理系统平台" /></a>
+          <span class="card-tag">管理系统平台</span>
+          <p>为了提升了一线管理人员的操作体验，我们为三菱机电全新设计了测试管理平台，获得好评。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 荣誉 / 客户 / 联系 -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="info-grid reveal-stagger">
+        <div class="info-col">
+          <h3>荣誉</h3>
+          <ul>
+            <li>2019年德国红点设计 Best of the best</li>
+            <li>2022年德国红点设计 winner</li>
+            <li>2020年韩国 Kdesign 设计 winner</li>
+            <li>2018年设计入展世界互联网大会</li>
+            <li>2017年设计获得央视媒体介绍</li>
+            <li>2013年 IXDC 优秀界面设计团队</li>
+            <li>2023年嘉兴市十佳工业设计师</li>
+          </ul>
+        </div>
+        <div class="info-col clients">
+          <h3>客户</h3>
+          <ul>
+            <li><span>哪吒汽车</span><span>金通科技</span><span>日立科技</span><span>华为技术</span></li>
+            <li><span>微软中国</span><span>先锋科技</span><span>宝骏汽车</span><span>国金证券</span></li>
+            <li><span>海信科技</span><span>吉利汽车</span><span>中国移动</span><span>西谷科技</span></li>
+            <li><span>中企管理</span><span><a href="we.html">成为伙伴 →</a></span></li>
+          </ul>
+        </div>
+        <div class="info-col">
+          <h3>联系</h3>
+          <ul>
+            <li>微信：414504566</li>
+            <li>联系邮箱：<a href="mailto:Jet.jiang@uxtime.com">Jet.jiang@uxtime.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-site-footer></footer>
 </body>
 </html>
