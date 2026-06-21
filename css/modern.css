@@ -62,6 +62,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 img { max-width: 100%; height: auto; display: block; border: 0; }
+picture { display: contents; }   /* WebP <picture> 包裹层不参与布局，沿用 img 的样式 */
 a { color: var(--brand); text-decoration: none; transition: color var(--t); }
 a:hover { color: var(--brand-strong); }
 h1, h2, h3, h4 { color: var(--ink); line-height: 1.25; font-weight: 700; margin: 0 0 .6em; letter-spacing: -0.01em; }
@@ -222,7 +223,7 @@ main { display: block; }
   padding: 0 0 1.4rem; overflow: hidden; transition: transform var(--t), box-shadow var(--t), border-color var(--t);
 }
 .feature:hover { transform: translateY(-4px); border-color: var(--brand-soft); }
-.feature > img { width: 100%; aspect-ratio: 216 / 114; object-fit: cover; }
+.feature img { width: 100%; aspect-ratio: 216 / 114; object-fit: cover; }
 .feature-body { padding: 1.2rem 1.3rem 0; }
 .feature h3 { font-size: var(--fs-h3); margin: 0 0 .5rem; }
 .feature-desc { color: var(--ink-2); font-size: var(--fs-sm); margin: 0 0 1rem; }
